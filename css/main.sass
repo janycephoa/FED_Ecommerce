@@ -109,7 +109,7 @@ a
 .navContainer
   margin: 0 58px
   display: grid
-  grid-template-columns: 71px auto 20px 86px
+  grid-template-columns: 60px auto 20px 86px
   grid-template-rows: 60px 0px
   grid-row: 1
   align-items: center
@@ -221,6 +221,74 @@ a.navLinks
     grid-column: 3
     grid-row: 1
     justify-self: center
+
+/* Search  */
+
+.searchContainer
+  display: grid
+  grid-template-columns: 3fr 1fr
+  grid-template-rows: 1fr
+  margin: 28px 58px 0
+
+.searchBar
+  display: grid
+  grid-template-columns: 60px 1fr
+  grid-template-rows: 1fr
+
+.iconSearch
+  height: 42px
+  width: 42px
+  justify-self: center
+  align-self: center
+
+.searchInput:focus
+  outline: none
+
+.searchInput
+  border: 0
+  margin-left: 42px
+  padding: 10px 0
+  border-bottom: 2px solid #1b1b1b
+  font-size: 24px
+  font-weight: 600
+  grid-column: 2 / span 1
+  grid-row: 1
+
+
+.poweredBy
+  grid-column: 2
+  grid-row: 1
+  align-self: center
+  justify-self: end
+  font-size: 11px
+
+  img
+    margin: -1px 0 0 4px
+
+@media only screen and (max-width: 640px)
+  .searchContainer
+    grid-template-columns: 1fr
+    grid-template-rows: 1fr 1fr
+    margin: 42px 21px 0
+
+  .searchBar
+    grid-template-columns: 20px 1fr
+    grid-template-rows: 1fr 1fr
+
+  .poweredBy
+    grid-column: 2
+    grid-row: 2
+    align-self: start
+    justify-self: end
+    padding-top: 10px
+
+
+  .iconSearch
+    height: 20px
+    width: 20px
+
+  .searchInput
+    margin-left: 21px
 
 
 
